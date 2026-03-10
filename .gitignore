@@ -21,3 +21,5 @@ gradle-app.setting
 .classpath
 .gradle
 .idea
+/bin/
+/build/
