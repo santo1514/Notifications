@@ -1,0 +1,4 @@
+//Nombre del proyecto
+rootProject.name = "notifications"
+//Incluir los módulos del proyecto
+include 'api-gateway', 'auth-service', 'notification-service', 'worker-service'

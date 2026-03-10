@@ -1,0 +1,17 @@
+server:
+  port: 9080
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: auth-service
+          uri: http://auth-service:9081
+          predicates:
+            - Path=/auth/**
+        - id: notification-service
+          uri: http://notification-service:9082
+          predicates:
+            - Path=/notifications/**
+          filters:
+            - name: AuthFilter
